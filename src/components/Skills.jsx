@@ -9,7 +9,6 @@ const Skills = () => {
               <img src="src/assets/languages/js.png" alt="" />
               <img src="src/assets/languages/java_logo.png" alt="" />
               <img src="src/assets/languages/cpp_logo.png" alt="" />
-              <img src="https://fakeimg.pl/100x100?text=Lan" alt="" />
             </ul>
           </div>
           <h2>Technical Frameworks</h2>

@@ -1,12 +1,22 @@
+import { Image } from 'antd'
+import { useState } from 'react'
 
 const Resume = () => {
+    const [isPreviewVisible, setPreviewVisible] = useState(false);
+
+
         return (
-            <div className='resume-div'>
+            <div className="resume-div">
                 <h1>Resume</h1>
-                <img src="https://fakeimg.pl/612x792?text=Resume" alt="" />
-                <div>
+                <Image preview={
+                    {
+                    visible: isPreviewVisible,
+                    onVisibleChange: (visible, prevVisible) => 
+                        setPreviewVisible(visible)
+                }} src="src/assets/placeholders/resume_placeholder.png" alt="" />
+                <div className="resume-handling-div">
                     {/* Popup View */}
-                    <button className='view-button'>View</button>
+                    <button className='view-button' onClick={() => setPreviewVisible(!isPreviewVisible)}>View</button>
                     <button className='download-button'>Download</button>
                 </div>
             </div>

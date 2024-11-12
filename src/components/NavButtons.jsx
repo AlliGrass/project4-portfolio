@@ -1,20 +1,9 @@
-import { useState, useEffect } from "react"
-import { useLocation, Link } from 'react-router-dom';
-import pagePaths from "../assets/pagePaths";
+import { Link } from 'react-router-dom';
+import pagePaths from "../constants/pagePaths";
+import useNavButtons from '../hooks/useNavButtons';
 
 const NavButtons = () => {
-    const urlPath = useLocation()
-    const [leftNavButton, setLeftNavButton] = useState()
-    const [rightNavButton, setRightNavButton] = useState()
-
-    useEffect(() => {
-        const currentPage = urlPath.pathname
-
-        if (pagePaths[currentPage]) {
-            setLeftNavButton(pagePaths[currentPage].leftNavPath)
-            setRightNavButton(pagePaths[currentPage].rightNavPath)
-        }
-    } , [urlPath]) 
+    const { leftNavButton, rightNavButton } = useNavButtons()
 
     return (
         <div className="nav-buttons-div">
@@ -34,10 +23,6 @@ const NavButtons = () => {
                     </div>
                 </Link>
             )}
-            
-            
-            
-            
         </div>
     )
 }

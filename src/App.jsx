@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 // import Link from 'react-router-dom'
 
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom' // change hashrouter  =>  browser router
 
 
 

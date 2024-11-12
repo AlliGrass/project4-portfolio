@@ -43,6 +43,10 @@
 
 
 
+body, html {
+  margin: 0;
+  padding: 0;
+}
 
 img {
   width: 100%;
@@ -51,10 +55,12 @@ img {
 
 
 /* NavBar */
+
 .navbar {
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
   display: flex;
   justify-content: space-between;
 
@@ -62,23 +68,15 @@ img {
   padding: 5px;
 }
 
-
-
-
-
-
-/* General */
-
-
-
-
-
-
-
+/* Nav Buttons */
+/* .nav-buttons-div {
+  width: 100%;
+  height: 100vh;
+} */
 
 .nav-buttons-div div {
-  position: absolute;
-  transform: translateX(-50%);
+  top: 50%;
+  position:fixed;
   margin: 15px;
   padding: 20px;
   border: 1px solid black;
@@ -93,6 +91,12 @@ img {
   right: 0;
 }
 
+
+
+/* General */
+
+
+
 .testing {
   width: 100%;
   display: grid;
@@ -102,6 +106,13 @@ img {
 .testing * {
   border: 1px solid black;
 }
+
+
+
+
+
+
+
 
 
 
@@ -141,13 +152,17 @@ img {
 
 /* Intro */
 .intro-div {
+  height: 100vh;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr 2fr;
+  align-items: center;
 }
 
 .intro-img {
   width: 100%;
 }
+
+/* Skills */
 
 .skills-li {
   display: flex;
@@ -155,12 +170,22 @@ img {
   flex-wrap: wrap;
 }
 
+.skills-li * {
+  width: 20%;
+  height: 100%;
+}
+
 
 /* Projects */
 .projects-list-div {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects-list-div article {
+  margin: 15px;
+
+  background-color: #61dafbaa;
 }
 
 .project-info-div {
@@ -173,12 +198,16 @@ img {
   justify-content: space-evenly;
 }
 
+.project-lan-ul img {
+  width: 10%;
+}
+
 
 
 /* Resume/Contact */
 
 
-.contact-div {
+.method-contact-div {
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
