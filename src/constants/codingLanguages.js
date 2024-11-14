@@ -21,6 +21,10 @@ const codingLanguages = {
         name: 'CSS',
         img_src: 'src/assets/languages/css_logo.png'
     },
+    'tsc': {
+        name: 'TypeScript',
+        img_src: 'src/assets/languages/typescript_logo.png'
+    },
     'ruby': {
         name: 'Ruby',
         img_src: 'src/assets/languages/ruby.png'

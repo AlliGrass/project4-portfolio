@@ -2,11 +2,9 @@ import Projects from "../components/Projects"
 
 const LeftMonitor = () => {
     return (
-        <>
-            <section className='project'>
-                <Projects />
-            </section>
-        </>
+        <section className='ProjectPage'>
+            <Projects />
+        </section>
     )
 }
 

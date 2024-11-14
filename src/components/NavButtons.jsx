@@ -10,16 +10,22 @@ const NavButtons = () => {
             { leftNavButton && (
                 <Link to={leftNavButton}>
                     <div className="nav-left-div">
-                        <button className="nav-left-button">&larr;</button>
-                        <span>{pagePaths[leftNavButton].pageName}</span>
+                        <div className="nav-left-arrow-div">
+                            <p >&lsaquo;</p>
+                        </div>
+                        
+                        <label>{pagePaths[leftNavButton].pageName}</label>
                     </div>
                 </Link>
             )}
             { rightNavButton && (
                 <Link to={rightNavButton}>
                     <div className="nav-right-div">
-                        <button className="nav-right-button">&rarr;</button>
-                        <span>{pagePaths[rightNavButton].pageName}</span>
+                        <div className='nav-right-arrow-div'>
+                            <p>&rsaquo;</p>
+                        </div>
+                        
+                        <label>{pagePaths[rightNavButton].pageName}</label>
                     </div>
                 </Link>
             )}

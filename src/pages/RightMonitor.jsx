@@ -3,12 +3,10 @@ import Contact from "../components/Contact"
 
 const RightMonitor = () => {
     return(
-        <>
-            <section className='resume'>
-                <Resume />
-                <Contact />
-           </section>
-        </>
+        <section className='ResumePage'>
+            <Resume />
+            <Contact />
+        </section>
     )
 }
 

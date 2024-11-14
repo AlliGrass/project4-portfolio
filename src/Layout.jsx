@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import NavButtons from "./components/NavButtons"
 import useCurrentPage from "./hooks/useCurrentPage"
+import Footer from './components/Footer'
 
 const Layout = () => {
     const currentPage = useCurrentPage()
@@ -12,10 +13,11 @@ const Layout = () => {
             {currentPage !== '/main' && <Navbar /> }
             <NavButtons />
             
-            
             <main>
                 <Outlet />
             </main>
+
+            <Footer />
         </>
     )
 }

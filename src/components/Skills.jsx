@@ -1,23 +1,29 @@
+import codingLanguages from "../constants/codingLanguages"
+import proficientSkills from "../constants/proficientSkills"
+
+
 const Skills = () => {
+  const createSkill = (languageCode, index) => (
+    <li>
+      <img src={codingLanguages[languageCode].img_src} key={index}/>
+    </li>
+  )
+
     return (
         <div className='skills-div'>
         <h1>Skills</h1>
         <article>
           <h2>Technical Languages</h2>
           <div>
-            <ul className='skills-li'>
-              <img src="src/assets/languages/js.png" alt="" />
-              <img src="src/assets/languages/java_logo.png" alt="" />
-              <img src="src/assets/languages/cpp_logo.png" alt="" />
+            <ul className='skills-ul'>
+              {proficientSkills['technical'].map((languageCode, index) => createSkill(languageCode, index))}
             </ul>
           </div>
           <h2>Technical Frameworks</h2>
           <div>
-            <ul className='skills-li'>
-              <img src="src/assets/languages/react_logo.png" alt="" />
-              <img src="https://fakeimg.pl/100x100?text=Lan" alt="" />
-              <img src="https://fakeimg.pl/100x100?text=Lan" alt="" />
-            </ul>
+              <ul className='skills-ul'>
+                {proficientSkills['environment'].map((languageCode, index) => createSkill(languageCode, index))}
+              </ul>
           </div>
         </article>
       </div>
