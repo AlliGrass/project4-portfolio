@@ -1,0 +1,49 @@
+body {
+    background-color: #f0f0ff;
+    color: #1B1A55;
+}
+  
+footer {
+    background: rgb(240,240,255);
+    background: linear-gradient(180deg, rgba(240,240,255,0.2780373831775701) 8%, rgba(66,72,116,1) 11%, rgba(240,240,255,1) 14%, rgba(240,240,255,1) 63%);
+}
+
+.hero-div {
+    background: rgb(240,240,255);
+    background: linear-gradient(0deg, rgba(240,240,255,1) 0%, rgba(211,220,242,1) 26%, rgba(181,196,228,1) 48%);
+}
+
+.navbar {
+    background: rgb(240,240,255);
+    background: linear-gradient(0deg, rgba(240,240,255,0.2780373831775701) 0%, rgba(66,72,116,1) 11%, rgba(240,240,255,1) 14%, rgba(240,240,255,1) 63%);
+}
+ 
+.nav-left-arrow-div, .nav-right-arrow-div {
+    background: rgb(240,240,255);
+    background: radial-gradient(circle, rgba(240,240,255,1) 0%, rgba(240,240,255,1) 61%, rgba(66,72,116,1) 64%, rgba(240,240,255,1) 71%);
+    color: #1B1A55;
+}
+  
+.nav-left-arrow-div:hover, .nav-right-arrow-div:hover {
+    background: rgb(240,240,255);
+    background: radial-gradient(circle, rgba(240,240,255,1) 0%, rgba(240,240,255,1) 61%, rgba(66,72,116,1) 64%, rgba(240,240,255,1) 71%);
+    color: #1B1A55;
+}
+  
+.nav-left-div label, .nav-right-div label {
+    color: #1B1A55;
+}
+  
+.skills-ul li{
+    background: rgb(128,134,176);
+    background: linear-gradient(30deg, rgba(128,134,176,1) 0%, rgba(244,238,255,1) 44%, rgba(166,177,225,1) 79%);
+}
+  
+.project-lan-ul li {
+    background: rgb(128,134,176);
+    background: linear-gradient(-30deg, rgba(128,134,176,1) 0%, rgba(240,240,255,1) 61%, rgba(166,177,255,1) 100%);
+}
+  
+.project-article{
+    background: #d2d6ff;
+}

@@ -8,103 +8,6 @@ img {
   display: block;
 }
 
-
-/* dark mode */
-.dark-mode {
-  background-color: #1A1A1D;
-  color: #f0f0ff;
-}
-
-.navbar {
-  background: rgb(26,26,29);
-  background: linear-gradient(0deg, rgba(26,26,29,1) 3%, rgba(166,77,121,1) 7%, rgba(26,26,29,1) 12%, rgba(26,26,29,1) 63%);
-}
-
-.nav-left-arrow-div, .nav-right-arrow-div {
-  background: rgb(7,15,43);
-  background: radial-gradient(circle, rgba(7,15,43,1) 0%, rgba(7,15,43,1) 61%, rgba(166,77,121,1) 64%, rgba(7,15,43,1) 71%);
-  color: #f0f0ff;
-
-}
-
-.nav-left-arrow-div:hover, .nav-right-arrow-div:hover {
-  background: rgb(7,15,43);
-  background: radial-gradient(circle, rgba(7,15,43,1) 0%, rgba(7,15,43,1) 61%, rgba(166,77,121,1) 64%, rgba(7,15,43,1) 71%);
-  color: #f0f0ff;
-}
-
-.nav-left-div label, .nav-right-div label {
-  color: #f0f0ff;
-}
-
-.skills-ul li{
-  background: rgb(89,36,74);
-  background: linear-gradient(30deg, rgba(89,36,74,1) 18%, rgba(69,12,50,1) 40%, rgba(166,77,121,1) 79%);
-}
-
-.project-lan-ul li {
-  background: rgb(89,36,74);
-  background: linear-gradient(-30deg, rgba(89,36,74,1) 0%, rgba(69,12,50,1) 61%, rgba(166,77,121,1) 100%);
-}
-
-.project-article{
-  background: #3B1C32;
-}
-
-
-/* light mode */
-.light-mode {
-  background-color: #f0f0ff;
-  color: #1B1A55;
-}
-
-/* .navbar {
-  background: rgb(240,240,255);
-  background: linear-gradient(0deg, rgba(240,240,255,0.2780373831775701) 0%, rgba(66,72,116,1) 11%, rgba(240,240,255,1) 14%, rgba(240,240,255,1) 63%);
-}
-
-.nav-left-arrow-div, .nav-right-arrow-div {
-  background: rgb(240,240,255);
-  background: radial-gradient(circle, rgba(240,240,255,1) 0%, rgba(240,240,255,1) 61%, rgba(66,72,116,1) 64%, rgba(240,240,255,1) 71%);
-  color: #1B1A55;
-
-}
-
-.nav-left-arrow-div:hover, .nav-right-arrow-div:hover {
-  background: rgb(240,240,255);
-  background: radial-gradient(circle, rgba(240,240,255,1) 0%, rgba(240,240,255,1) 61%, rgba(66,72,116,1) 64%, rgba(240,240,255,1) 71%);
-  color: #1B1A55;
-}
-
-.nav-left-div label, .nav-right-div label {
-  color: #1B1A55;
-}
-
-.skills-ul li{
-  background: rgb(128,134,176);
-  background: linear-gradient(30deg, rgba(128,134,176,1) 0%, rgba(244,238,255,1) 44%, rgba(166,177,225,1) 79%);
-}
-
-.project-lan-ul li {
-  background: rgb(128,134,176);
-  background: linear-gradient(-30deg, rgba(128,134,176,1) 0%, rgba(240,240,255,1) 61%, rgba(166,177,255,1) 100%);
-}
-
-.project-article{
-  background: #d2d6ff;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
 .GeneralPage, .ProjectPage, .ResumePage {
   margin: 0 auto;
   width: 80%;
@@ -113,6 +16,30 @@ img {
   justify-content: center;
   text-align: center;
 }
+
+.desk-section {
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  
+}
+
+.desk-section article {
+  padding: 15px;
+  padding-bottom: 0;
+}
+
+.center-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
 
 
 
@@ -124,11 +51,18 @@ img {
   top: 0;
   z-index: 100;
 }
+
 .navbar {
-  display: flex;
-  justify-content: space-between;
   padding: 5px;
 }
+
+.toggle-theme-div {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* Nav Buttons */
 
@@ -144,6 +78,7 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  z-index: 0;
 }
 
 .nav-left-div label, .nav-right-div label {
@@ -172,22 +107,20 @@ img {
   padding-bottom: 13px;
 }
 
+/* Footer */
 
-
+footer {
+  margin-top: 50px;
+  padding: 50px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
 
 /* General */
 
 
 
-.testing {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-}
-
-.testing * {
-  border: 1px solid black;
-}
 
 
 
@@ -232,18 +165,30 @@ img {
 
 
 
-/* Intro */
+/* Hero */
 .hero-div {
-  width: 70%;
-  margin: 0 auto;
+  position: relative;
+  padding-left: 200px;
+  padding-right: 200px;
+  display: flex;
+  justify-content: center;
   height: 100vh;
+  z-index: 100;
+}
+
+.hero-section {
   display: grid;
-  grid-template-columns: 3fr 1fr 2fr;
+  grid-template-columns: 3fr 2fr;
   align-items: center;
 }
 
 .hero-article {
   margin: 80px;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 15px;
 }
 
 /* Skills */
@@ -341,7 +286,7 @@ img {
 
 
 
-/* Resume/Contact */
+/* Resume */
 .resume-image img{
   width: 300px;
 }
@@ -351,20 +296,29 @@ img {
   overflow: auto;
 }
 
-.contact-list-section {
+/* Contact */
+.contact-div {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-list-section {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .method-contact-div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 10px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .method-contact-div img {
   width: 100px;
+  padding: 50px;
+  padding-top: 10px;
+  padding-bottom: 0;
 }
+
+

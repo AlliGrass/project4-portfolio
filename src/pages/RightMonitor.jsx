@@ -5,7 +5,6 @@ const RightMonitor = () => {
     return(
         <section className='ResumePage'>
             <Resume />
-            <Contact />
         </section>
     )
 }

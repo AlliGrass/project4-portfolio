@@ -1,7 +1,7 @@
 const pagePaths = {
-    '/main': { pageName: 'Home', leftNavPath: '/left', rightNavPath: '/right' },
-    '/left': { pageName: 'Projects', leftNavPath: '', rightNavPath: '/main' },
-    '/right': { pageName: 'Resume\nContact', leftNavPath: '/main', rightNavPath: '' },
+    '/': { pageName: 'Home', leftNavPath: '/left', rightNavPath: '/right' },
+    '/left': { pageName: 'Projects', leftNavPath: '', rightNavPath: '/' },
+    '/right': { pageName: 'Resume', leftNavPath: '/', rightNavPath: '' },
   };
   
 export default pagePaths;

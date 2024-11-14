@@ -1,19 +1,18 @@
-
-
-const description = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et totam qui vero facilis at ullam vel odio, possimus neque assumenda recusandae, mollitia rem inventore. Amet cumque quos voluptatem! Hic, ut?'
+    const description = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et totam qui vero facilis at ullam vel odio, possimus neque assumenda recusandae, mollitia rem inventore. Amet cumque quos voluptatem! Hic, ut?'
 const img_src = 'https://fakeimg.pl/400x300?text=preview'
+const Solitaire = 'https://alligrass.github.io/project1_Solitaire/'
 
 const projectList = [
     {
         title: 'Solitaire',
-        img_src: img_src,
+        img_src: 'src/assets/projects/solitaire.png',
         description: "The classic card game using no libraries or APIs",
         languages: ['html', 'css', 'js'],
         preview_link: 'https://alligrass.github.io/project1_Solitaire/'
     },
     {
         title: 'Gas Station App',
-        img_src: img_src,
+        img_src: 'src/assets/projects/servo_app.png',
         description: "A group project which built a map that shows the location of every servo within Australia from a dated data file",
         languages: ['html', 'css', 'js', 'psql'],
         preview_link: ''

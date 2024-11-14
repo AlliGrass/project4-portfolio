@@ -6,7 +6,6 @@ import RightMonitor from './pages/RightMonitor'
 
 import Layout from './Layout'
 
-
 import './App.css'
 
 const App = () => {
@@ -14,9 +13,9 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Desk/>} />  
+        {/* <Route path='/' element={<Desk/>} />   */}
         <Route element={<Layout />}>
-          <Route path='/main' element={<MainMonitor />} />
+          <Route path='/' element={<MainMonitor />} />
           <Route path='/left' element={<LeftMonitor />} />
           <Route path='/right' element={<RightMonitor />} />
         </Route>
