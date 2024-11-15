@@ -8,7 +8,6 @@ const useThemes = () => {
     
     const toggleTheme = (checked) => {
         setIsDarkMode(checked)
-
     }
 
     useEffect(() => {
@@ -20,7 +19,9 @@ const useThemes = () => {
         themeLink.href = isDarkMode ? "src/styles/dark-theme.css" : "src/styles/light-theme.css"
     }, [isDarkMode])
     
-    return { isDarkMode, toggleTheme };
+    const theme = isDarkMode ? 'dark-theme' : 'light-theme'
+
+    return { isDarkMode, toggleTheme, theme };
 }
 
 export default useThemes

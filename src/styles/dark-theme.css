@@ -47,3 +47,8 @@ footer {
 .project-article{
     background: #3B1C32;
 }
+
+.download-button, .preview-button {
+    background-color: #1A1A1D;
+    color: #f0f0ff;
+}

@@ -23,7 +23,7 @@ const Contact = () => {
             <h2>Contact</h2>
             <section className="contact-list-section">
                 {contactList.map((social, index) => (
-                    <a className='method-contact-div' key={index}>
+                    <a className='method-contact-div' href={social.link} key={index}>
                         <img src={social.img_src} alt="" />
                     </a>
                 ))}

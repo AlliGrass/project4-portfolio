@@ -1,23 +1,16 @@
 
 import { useEffect, useState } from "react";
-import projectList from "../constants/projectList";
+// import projectList from "../constants/projectList";
 
-const PreviewProject = (event) => {
-    const [currentPreviewProject, setCurrentPreviewProject] = useState()
-    // const projectName = event.target.closest(".project-article").firstChild.innerHTML
-    const projectObj = projectList.find(checkingProject => checkingProject['title'] === projectName)
+const PreviewProject = ({previewLink}) => {
+    [isVisible, setIsVisible] = useState(false)
 
-    const projectLink = projectObj?.['preview_link'] || '';
-    
     useEffect(() => {
-        setCurrentPreviewProject(projectLink)
-    }, [projectLink])
-
-    console.log(currentPreviewProject)
-    console.log(projectLink)
+        setIsVisible(previewLink === '');
+    }, [previewLink]);
 
     return (
-        <iframe src={currentPreviewProject} frameborder="0" />
+        isVisible ? (<iframe src={previewLink} frameborder="0" />) : null
     )
 }
 
