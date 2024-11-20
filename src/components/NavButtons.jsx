@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-import pagePaths from "../constants/pagePaths";
 import useNavButtons from '../hooks/useNavButtons';
+import data from "../data/data.json"
 
 const NavButtons = () => {
+    const pagePaths = data.pagePaths
     const { leftNavButton, rightNavButton } = useNavButtons()
 
     return (
@@ -11,7 +12,7 @@ const NavButtons = () => {
                 <Link to={leftNavButton}>
                     <div className="nav-left-div">
                         <div className="nav-left-arrow-div">
-                            <p >&lsaquo;</p>
+                            <p>&lsaquo;</p>
                         </div>
                         
                         <label>{pagePaths[leftNavButton].pageName}</label>

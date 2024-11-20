@@ -1,11 +1,9 @@
-import codingLanguages from "../constants/codingLanguages"
+import data from "../data/data.json"
 
 
 const Skills = () => {
-  const proficientSkills = {
-    technical: ['html', 'css', 'js', 'cpp', 'java'],
-    environment: ['node', 'rct', 'eide', 'psql']
-  }
+  const proficientSkills = data.proficientSkills
+  const codingLanguages = data.codingLanguages
 
   const createSkill = (languageCode, index) => (
     <li key={index}>

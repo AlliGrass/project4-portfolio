@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import projectList from "../constants/projectList"; 
 import CreateProject from "./CreateProject";
 import PreviewProject from "./PreviewProject";
 
+import data from "../data/data.json"
+
 const Projects = () => {
+    const projectList = data.projectList
 
     const [selectedProject, setSelectedProject] = useState(null);
 

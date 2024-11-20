@@ -1,13 +1,60 @@
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component"
+import 'react-vertical-timeline-component/style.min.css'
+
+import { useContext } from "react"
+import ThemeContext from "../Contexts/ThemeContext"
+
+import data from "../data/data.json"
+
 const About = () => {
-    return (
-        <div className='about-div'>
+    const codingTimeline = data.codingTimeline
+
+    const { isDarkMode } = useContext(ThemeContext)
+
+    return ( 
+        <>
             <h1>About Me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum, aliquid inventore hic aliquam accusamus pariatur reprehenderit, magnam quis doloremque eum quod cumque non enim, dicta ratione. Tenetur, debitis nobis.
-            Maiores quod alias officia voluptatum fugiat. Incidunt consequuntur blanditiis doloremque animi esse corporis deserunt aut? Assumenda aperiam natus soluta expedita, sit debitis magni vero ipsa a ipsam sunt reprehenderit nostrum!
-            Voluptas voluptatibus obcaecati cumque error architecto vitae sed odio tempora placeat? Ullam suscipit magnam commodi, alias excepturi eligendi eaque nulla distinctio amet quaerat tempore quos maxime maiores temporibus, culpa officiis.
-            Saepe similique ex aliquam eaque vitae porro possimus sunt id deserunt sapiente mollitia tempore quod dolores, eligendi facere totam quis libero voluptas tenetur dignissimos rem? Adipisci rerum aperiam ipsa in!
-            Error quasi dignissimos dolor! Eum labore quisquam, dolorem reiciendis odit officia aut! Adipisci voluptatibus nam libero, provident, deserunt corrupti, aliquid perferendis asperiores fugiat similique distinctio ducimus a nobis enim repudiandae.</p>
-        </div>
+            <section className='about-section'>
+                
+                <div className="personal-about-div">
+                <p>Having been a program enthusiast for more than 4 years I have experience in many fields which include Frontend Development, Backend Development, Cloud Computing and Network Operations.</p>
+
+                <p>I have the most experience in Full-Stack applications where most of my projects have been built and/or adapted to showcase my work.</p>
+                </div> 
+
+                <div className="coding-timeline-div">
+                    <h2>Coding Journey</h2>
+                    <VerticalTimeline lineColor={isDarkMode ? '#f0f0ff' : '#1a1a1d'}>
+                        {codingTimeline.map((timelineLanguage, index) => (
+                            <VerticalTimelineElement
+                                className="timeline-language-element"
+                                contentStyle= {{ 
+                                    background: 'none', 
+                                    color: isDarkMode ? '#f0f0ff' : '#1a1a1d'
+                                }}
+                                contentArrowStyle= {{ 
+                                    borderRight: isDarkMode ? '7px solid #f0f0ff' : '7px solid #1a1a1d' 
+                                }}
+                                iconStyle= {{ 
+                                    background: isDarkMode ? 'rgb(89,36,74) linear-gradient(-30deg, rgba(89,36,74,1) 0%, rgba(69,12,50,1) 43%, rgba(166,77,121,1) 100%)' : 'rgb(128,134,176) linear-gradient(-30deg, rgba(128,134,176,1) 0%, rgba(240,240,255,1) 61%, rgba(166,177,255,1) 100%)',
+                                    border: isDarkMode ? '#f0f0ff' : '#1a1a1d'
+                                }}
+                                position="right"
+                                icon={
+                                <div className="timeline-language-icon-div" > 
+                                    <img className='timeline-language-icon' src={timelineLanguage.icon} alt="" /> 
+                                </div>}>
+                                <p className="timeline-language-span">{timelineLanguage.codingLanguage}</p>
+                                <span>{timelineLanguage.year}</span>
+                            </VerticalTimelineElement>
+
+                        ))}
+
+                       
+                    </VerticalTimeline>
+                </div>
+            </section>
+        </>
     )
 }
 

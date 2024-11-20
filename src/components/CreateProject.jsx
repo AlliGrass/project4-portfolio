@@ -1,9 +1,9 @@
-import { useState } from "react";
-import codingLanguages from "../constants/codingLanguages"
-
+import data from "../data/data.json"
 
 
 const CreateProject = ({ title, img_src, description, languages, preview_link }) => {
+    const codingLanguages = data.codingLanguages
+
     const canPreview = preview_link !== '';
 
     return (
