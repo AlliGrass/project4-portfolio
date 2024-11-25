@@ -8,6 +8,7 @@ import data from "../data/data.json"
 
 const About = () => {
     const codingTimeline = data.codingTimeline
+    const profile = data.profile
 
     const { isDarkMode } = useContext(ThemeContext)
 
@@ -17,14 +18,16 @@ const About = () => {
             <section className='about-section'>
                 
                 <div className="personal-about-div">
-                <p>Having been a program enthusiast for more than 4 years I have experience in many fields which include Frontend Development, Backend Development, Cloud Computing and Network Operations.</p>
-
-                <p>I have the most experience in Full-Stack applications where most of my projects have been built and/or adapted to showcase my work.</p>
+                    {profile.profile_about.map((line, index) => (
+                        <p key={index}>
+                            {line}
+                        </p>
+                    ))}
                 </div> 
 
                 <div className="coding-timeline-div">
                     <h2>Coding Journey</h2>
-                    <VerticalTimeline lineColor={isDarkMode ? '#f0f0ff' : '#1a1a1d'}>
+                    <VerticalTimeline lineColor={isDarkMode ? '#f0f0ff' : '#1B1A55'}>
                         {codingTimeline.map((timelineLanguage, index) => (
                             <VerticalTimelineElement
                                 className="timeline-language-element"

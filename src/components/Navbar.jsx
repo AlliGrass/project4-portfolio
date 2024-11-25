@@ -1,5 +1,4 @@
 import { Switch } from "antd"
-import useThemes from "../hooks/useThemes"
 import ThemeContext from "../Contexts/ThemeContext";
 import { useContext } from "react";
 
