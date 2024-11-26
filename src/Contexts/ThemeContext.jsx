@@ -18,7 +18,10 @@ export const ThemeProvider = ({ children }) => {
         document.documentElement.setAttribute('data-theme', theme)
 
         const themeLink = document.getElementById('theme-css-link')
-        themeLink.href = isDarkMode ? "src/styles/dark-theme.css" : "src/styles/light-theme.css"
+        if (themeLink) {
+            themeLink.href = isDarkMode ? "/assets/styles/dark-theme.css" : "/assets/styles/light-theme.css"
+        }
+        
     }, [isDarkMode])
 
 

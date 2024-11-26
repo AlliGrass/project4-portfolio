@@ -19,7 +19,7 @@ const Resume = () => {
                     visible: isPreviewVisible,
                     onVisibleChange: (visible, prevVisible) => 
                         setPreviewVisible(visible)
-            }} src="src/assets/placeholders/resume_placeholder.png" alt="" />
+            }} src="/assets/placeholders/resume_placeholder.png" alt="" />
 
             <div className="resume-handling-div">
                 <button className='download-button' onClick={downloadResume}>Download</button>
