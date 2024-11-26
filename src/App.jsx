@@ -31,7 +31,7 @@ const App = () => {
             <Route path='/left' element={<LeftMonitorWithContext />} />
             <Route path='/right' element={<RightMonitor />} />
           </Route>
-        <Route path='/desk' element={<Desk />} />
+        {/* <Route path='/desk' element={<Desk />} /> */}
         </Routes>
       </Router>
     </ThemeProvider>  
