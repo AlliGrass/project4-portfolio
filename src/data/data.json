@@ -9,7 +9,20 @@
     "profile": {
         "profile_img": "/assets/profile.jpg",
         "profile_titles": [],
-        "profile_about": ["Having been a program enthusiast for more than 4 years I have experience in many fields which include Frontend Development, Backend Development, Cloud Computing and Network Operations.", "I have the most experience in Full-Stack applications where most of my projects have been built and/or adapted to showcase my work."]
+        "profile_intro": {
+            "intro_name": "Allison Grasso",
+            "intro_quote": "Challenging How to Navigate Code",
+            "intro_directive": "Welcome to my computer. Click one of the monitors to navigate around my portfolio"
+        },
+        "profile_about": [
+            "Having been a program enthusiast for more than 4 years I have experience in many fields which include Frontend Development, Backend Development, Cloud Computing and Network Operations.", 
+            "I have the most experience in Full-Stack applications where most of my projects have been built and/or adapted to showcase my work."
+        ]
+    },
+
+    "resume": {
+        "pdf": "/assets/resume/Grasso_Allison_Resume.pdf",
+        "img": "/assets/resume/Grasso_Allison_Resume.jpg"
     },
 
     "projectList": [
@@ -27,23 +40,23 @@
             "description": "A group project which built a map that shows the location of every servo within Australia from a dated data file",
             "languages": ["html", "css", "js", "psql"],
             "preview_link": "",
-            "github": ""
+            "github": "https://github.com/AlliGrass/Servo-project3"
         }, 
         {
             "title": "Terminal - Rock Paper Scissors",
-            "img_src": "https://fakeimg.pl/400x300?text=preview",
+            "img_src": "/assets/projects/terminalRPS.png",
             "description": "A basic FullStack application for the purpose of running Java within React Typescript by using Python to make API calls on the backend",
             "languages": ["tsc", "py", "java"],
             "preview_link": "",
-            "github": ""
+            "github": "https://github.com/AlliGrass/terminal-rock-paper-scissors"
         },
         {
-            "title": "Snake",
-            "img_src": "https://fakeimg.pl/400x300?text=preview",
-            "description": "The classic video game",
-            "languages": ["py"],
-            "preview_link": "",
-            "github": ""
+            "title": "Website Portfolio",
+            "img_src": "/assets/monitors/mainMonitor.png",
+            "description": "A multi page application that includes the ability to switch from dark to light themes.",
+            "languages": ["html", "css", "js", "rct"],
+            "preview_link": "https://alligrass-portfolio-bcb7ed38ce65.herokuapp.com/",
+            "github": "https://github.com/AlliGrass/project4-portfolio"
         }
     ],
 

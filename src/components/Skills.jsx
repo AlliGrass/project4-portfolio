@@ -6,9 +6,13 @@ const Skills = () => {
   const codingLanguages = data.codingLanguages
 
   const createSkill = (languageCode, index) => (
-    <li key={index}>
-      <img src={codingLanguages[languageCode].img_src}/>
-    </li>
+    <>
+      <li key={index}>
+        <img src={codingLanguages[languageCode].img_src}/>
+      </li>
+      {/* <span>{codingLanguages[languageCode].name}</span> */}
+    </>
+    
   )
 
   return (

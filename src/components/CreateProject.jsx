@@ -28,7 +28,7 @@ const CreateProject = ({ title, img_src, description, languages, preview_link, g
                         
                         <button className='preview-button' onClick={() => {getCurrentPreviewProject(preview_link)}} disabled={!canPreview}> {canPreview ? 'Preview' : 'Coming Soon'} </button>
                         <a href={github} target="_blank">
-                            <img className="project-github-img" src="src/assets/contacts/githubLight_logo.png" alt="" />
+                            <img className="project-github-img" src="/assets/contacts/githubLight_logo.png" alt="" />
                         </a>
                         <ul className="project-lan-ul">
                             {languages.map((languageCode, index) => (

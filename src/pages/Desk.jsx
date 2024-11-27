@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom"
 
+import data from "../data/data.json"
+
 const Desk = () => {
+  const profile = data.profile
+  
     return (
       <div className="desk-div">
         <section className='desk-section'>
@@ -12,10 +16,14 @@ const Desk = () => {
           </article>
 
           <article className='middle-general-article'>
-            <div className='profile-div'>
-              {/* <img src="src/assets/profile.jpg" alt="" /> */}
-              <div className='profile-info-div'>
-                <p>help</p>
+            <div className='desk-profile-div'>
+              <div className="desk-profile-picture-div">
+                <img className="desk-profile-img" src={profile.profile_img} alt="" />
+              </div>
+              <div className='desk-profile-info-div' style={{color:"white"}}>
+                <h1>{profile.profile_intro.intro_name}</h1>
+                <h2>{profile.profile_intro.intro_quote}</h2>
+                <h3>{profile.profile_intro.intro_directive}</h3>
               </div>
             </div>
             <div className='main-monitor'>

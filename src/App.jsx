@@ -26,12 +26,12 @@ const App = () => {
     <ThemeProvider>
       <Router>
         <Routes>
+        {/* <Route path='/' element={<Desk />} /> */}
           <Route element={<Layout />}>
             <Route path='/' element={<MainMonitor />} />
             <Route path='/left' element={<LeftMonitorWithContext />} />
             <Route path='/right' element={<RightMonitor />} />
           </Route>
-        {/* <Route path='/desk' element={<Desk />} /> */}
         </Routes>
       </Router>
     </ThemeProvider>  

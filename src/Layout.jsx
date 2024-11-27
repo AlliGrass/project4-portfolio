@@ -10,13 +10,11 @@ const Layout = () => {
 
     return (
         <>
-            {currentPage !== '/' && <Navbar /> }
+            {currentPage !== '/' && currentPage !== '/main' && <Navbar /> }
             <NavButtons />
-            
             <main>
                 <Outlet />
             </main>
-
             <Footer />
         </>
     )
