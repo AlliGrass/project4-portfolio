@@ -9,8 +9,9 @@ const Skills = () => {
     <>
       <li key={index}>
         <img src={codingLanguages[languageCode].img_src}/>
+        {/* <span className="langauge-overlay">{codingLanguages[languageCode].name}</span> */}
       </li>
-      {/* <span>{codingLanguages[languageCode].name}</span> */}
+      
     </>
     
   )

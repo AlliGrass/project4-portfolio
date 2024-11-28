@@ -11,6 +11,14 @@ img {
   display: block;
 }
 
+a {
+  color: unset;
+}
+
+a:hover {
+  color: unset;
+}
+
 .GeneralPage, .ProjectPage, .ResumePage {
   margin: 0 auto;
   width: 80%;
@@ -81,8 +89,6 @@ img {
   width: 100%;
   border: 15px solid black;
 }
-
-
 
 
 
@@ -182,10 +188,6 @@ footer {
   justify-content: center;
 }
 
-/* General */
-
-
-
 
 /* Hero */
 .hero-div {
@@ -219,6 +221,13 @@ footer {
 .hero-img {
   width: 100%;
   border-radius: 15px;
+}
+
+.hero-project-button {
+  font-size: larger;
+  border: 2px solid;
+  padding: 5px;
+  border-radius: 10%;
 }
 
 .scroll-down-arrow {
@@ -268,7 +277,7 @@ footer {
 
 .personal-about-div p {
   font-size: 25px;
-  text-align: justify;
+  text-align: left;
 }
 
 .timeline-language-icon-div {
@@ -306,6 +315,10 @@ footer {
 .skills-ul li {
   padding: 50px;
 }
+
+/* .skills-ul li:hover {
+  background: black;
+} */
 
 .skills-ul li img {
   width: 80px;

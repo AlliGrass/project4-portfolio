@@ -10,11 +10,19 @@ footer {
 
 .hero-div {
     background: rgb(26,26,29);
-    background: linear-gradient(0deg, rgba(26,26,29,1) 0%, rgba(125,74,107,1) 24%, rgba(69,12,50,1) 76%);
+    background: linear-gradient(0deg, rgba(26,26,29,1) 0%, #7d4a6b 24%, rgba(69,12,50,1) 76%);
 }
 
 .hero-navbar {
     background: rgba(69,12,50,1);
+}
+
+.hero-project-button {
+    background-color: #1A1A1D;
+}
+
+.hero-project-button:hover {
+    background-color: #3B1C32;
 }
   
 .navbar {

@@ -12,7 +12,7 @@ const Hero = () => {
                 <article className='hero-article'>
                     <h1 className='hero-name'>Allison Grasso</h1>
                     <ScrollingText />
-                    <h2 className="hero-project-calltoaction">Check out my <Button href="/Projects">Projects</Button></h2>
+                    <h2 className="hero-project-calltoaction">Click here to check out my <a className="hero-project-button" href="/Projects">Projects</a></h2>
                 </article>
                 <img className='hero-img' src={profile.profile_img} alt="" />
             </section>
