@@ -23,7 +23,7 @@ footer {
 }
 
 .navbar-navigation-ul li a {
-    color:#1B1A55;
+    color:#1B1A55 !important;
 }
  
 .nav-left-arrow-div, .nav-right-arrow-div {
