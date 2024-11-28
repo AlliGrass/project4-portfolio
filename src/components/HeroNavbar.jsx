@@ -5,17 +5,17 @@ import { useContext } from "react";
 import data from "../data/data.json"
 
 
-const Navbar = () => {
+const HeroNavbar = () => {
     const pages = data.pagePaths
     const { isDarkMode, toggleTheme } = useContext(ThemeContext);
 
 
 
     return (
-        <div className="navbar-container-div">
-            <nav className="navbar">
+        <div className="hero-navbar-container-div">
+            <nav className="hero-navbar">
                 <div className="logo-div">
-                <img className="logo-img" src={isDarkMode ? "/assets/initialLogoDark.png": "/assets/initialLogoLight.png" }  alt="" />
+                    <img className="logo-img" src={isDarkMode ? "/assets/initialLogoDark.png": "/assets/initialLogoLight.png" }  alt="" />
                 </div>
                 <div className="navbar-rightside-div">
                     <div className="navbar-navigation-div">
@@ -41,4 +41,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default HeroNavbar

@@ -10,7 +10,8 @@ const Layout = () => {
 
     return (
         <>
-            {currentPage !== '/' && currentPage !== '/main' && <Navbar /> }
+            {currentPage !== '/' && <Navbar /> } 
+            
             <NavButtons />
             <main>
                 <Outlet />

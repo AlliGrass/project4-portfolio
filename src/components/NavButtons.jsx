@@ -20,7 +20,7 @@ const NavButtons = () => {
                 </Link>
             )}
             { rightNavButton && (
-                <Link to={rightNavButton}>
+                <Link to={rightNavButton} target={pagePaths.pageName === "Resume" ? "_blank" : "_self"}>
                     <div className="nav-right-div">
                         <div className='nav-right-arrow-div'>
                             <p>&rsaquo;</p>

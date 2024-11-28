@@ -1,8 +1,8 @@
 {
     "pagePaths": {
-        "/": { "pageName": "Home", "leftNavPath": "/left", "rightNavPath": "/right" },
-        "/left": { "pageName": "Projects", "leftNavPath": "", "rightNavPath": "/" },
-        "/right": { "pageName": "Resume", "leftNavPath": "/", "rightNavPath": "" }
+        "/": { "pageName": "Home", "leftNavPath": "/Projects", "rightNavPath": "/Resume" },
+        "/Projects": { "pageName": "Projects", "leftNavPath": "", "rightNavPath": "/" },
+        "/Resume": { "pageName": "Resume", "leftNavPath": "/", "rightNavPath": "" }
     },
 
 
@@ -35,14 +35,6 @@
             "github": "https://github.com/AlliGrass/project1_Solitaire"
         },
         {
-            "title": "Gas Station App",
-            "img_src": "/assets/projects/servo_app.png",
-            "description": "A group project which built a map that shows the location of every servo within Australia from a dated data file",
-            "languages": ["html", "css", "js", "psql"],
-            "preview_link": "",
-            "github": "https://github.com/AlliGrass/Servo-project3"
-        }, 
-        {
             "title": "Terminal - Rock Paper Scissors",
             "img_src": "/assets/projects/terminalRPS.png",
             "description": "A basic FullStack application for the purpose of running Java within React Typescript by using Python to make API calls on the backend",
@@ -50,6 +42,14 @@
             "preview_link": "",
             "github": "https://github.com/AlliGrass/terminal-rock-paper-scissors"
         },
+        {
+            "title": "Gas Station App",
+            "img_src": "/assets/projects/servo_app.png",
+            "description": "A group project which built a map that shows the location of every servo within Australia from a dated data file",
+            "languages": ["html", "css", "js", "psql"],
+            "preview_link": "",
+            "github": "https://github.com/AlliGrass/Servo-project3"
+        }, 
         {
             "title": "Website Portfolio",
             "img_src": "/assets/monitors/mainMonitor.png",
