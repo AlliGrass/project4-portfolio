@@ -37,7 +37,10 @@ const CreateProject = ({ title, img_src, description, languages, preview_link, i
                                         project_instructions: instructions
                                         }
                                     )
-                                
+                                    window.scrollTo({
+                                        top: 0,
+                                        behavior: "smooth", 
+                                      });
                                 }} disabled={!canPreview}> {canPreview ? 'Preview' : 'Coming Soon'} </button>
                             
 
