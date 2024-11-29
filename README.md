@@ -1,62 +1,63 @@
-# Welcome to my Portfolio Website
+# Welcome to my [Portfolio Website](alligrass.dev)
 
-Here is my website that was created using React, Vite, Javascript, and AntDesign. Unfortunately the website is still a work in progress as, for the most part, there are some aspects of the website that are unrelated to the website itself but is crucial to its development.
+Thank you for visiting my portfolio website where I showcase the best of my software engineering abilities.
 
-![Opening Text](src/assets/development/main_8.png)
+## Tools Used
 
-### Things that are hindering further progress on the website include: 
+### React
+### Vite
+### JavaScript
+### CSS
+### ANTD - Ant Design UI Framework
+### Verticle Timeline - Component
 
-- Resume
-- Suitably Presentable Projects
+
+
+
+#
+
+![Final Hero](public/assets/development/hero_final.png)
+
+## Key Features
+
+Though I'm not specialised in the ways of UI design I've attempted to make the UI of my site as intuitive as possible with considerations to the colour schemes and a simple but effective layout. My portfolio will always be a work in progress as I learn and grow in the industry creating new and exciting pieces and projects. 
+
+### Toggle Dark / Light Mode
+
+Both colour schemes for dark and light mode are done with colourblindness taken into consideration.
+
+![Dark Mode](public/assets/development/dark_mode.png)
+
+### Interactive Project Previews
+
+Any listed projects within my portfolio that are available to preview opens a preview window within the site that is fully interactive to showcase the full capabilities of my projects
+
+### Coding Language Timeline
+
+Using the verticle timeline component I laid out my learning journey from my first website I made in Secondary School up to today highlighting which coding languages were the main languages I'd work with during those years.
+
+![Coding Timeline](public/assets/development/coding_timelline.png)
 
 ## Planning
 
-As always I laid out the plans for what my page would look like before I began my work on the site itself.
+As is customary for any and all projects I work on, I draft a layout plan for the pages that I will be creating to ensure that when I start building my applications I can streamline straight into functional code. Most of the design choices I'd made for my portfolio mimicked other portfolio websites that I liked personally. UI has never been a concern or specialty of mine, however with this portfolio I strived to make the experience as enjoyable as possible.
 
-![Main Page Plan](src/assets/development/planning_2.png)
-![Project Page Plan](src/assets/development/planning_1.png)
-![Resume Page Plan](src/assets/development/planning_4.png)
+![Main Page Plan](public/assets/development/planning_2.png)
+![Project Page Plan](public/assets/development/planning_1.png)
 
-## Developement
-
-Most of the design of this page was to mimic other portfolio websites that I liked personally, so a lot of time was spent on the CSS of the website.
-
-![Working Main Page](src/assets/development/main_4.png)
-![Working Project Page](src/assets/development/project_3.png)
-
-There was a stalemate on the resume page as the preview image would stretch to fit the window rather than maintain its aspect ratio. This was fixed by the fact I had initialised img width to 100% 
-
-![Stretched Resume Preview](src/assets/development/resume_2.png)
-
-Finally I implemented the dark mode button, efficiently shifting the page between light and dark themes from separate CSS files.
-
-![Skills Light Mode](src/assets/development/main_6.png)
-![Skills Dark Mode](src/assets/development/main_7.png)
-
-The main issue with the projects being incomplete is the fact they can't effectively be displayed
-
-![Solitaire Preview](src/assets/development/project_preview.png)
 
 ## Future Improvements
 
-- Fully Functional Projects
+### Functional
 
-        This would be ideal to be able to preview my works in the dedicated previewing section I had left for myself. Of course the complete implementation of the preview section would also be necessary, however that is trivial in comparison to the actual projects themselves.
+- Opening Resume in a new browser tab.
+- Loading effects to consider slower connections to the site
 
-- Browser Router
 
-        Currently the site utilises a hash router which is perfectly functional, however in terms of overall outlook it would be professional to include a browser router to remove the hash from the url.
+### More Animations
 
-- Github Dark Logo
+- Adding animation to the skills display circles so when you hover over them they appear to lift up and move as you move your cursor. 
+- Movement between pages so that pages appear to slide between each other.
 
-        Originally, depending on what theme the page currently has, would determine what logo would be displayed. Because the usual logo is completely black it would be unideal to use this on dark mode. I am aware that this is possible if I were to use react contexts.
 
-- More Animations
 
-        Some places I'd input animations would be the skills circles so when you hover over them they appear to lift up and move as you move your cursor. I'd also put in the movement between pages so that pages appear to slide between each other.
-
-- Minor Design Changes
-
-        There are a few stylistci choices that could make do with a revamp, all minor and possible to do within an hour, however they require other aspects to be complete before I can fully implement them. The only one that I could dedicate towards currently is the scroll of text on the Hero of the main page. 
-        
-        Originally the plan was to have them scroll exponentially quickly before slowing to a stop on one of the texts, halting for a few seconds before beginning the cycle again.

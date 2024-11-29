@@ -14,12 +14,26 @@ const Projects = () => {
         <section>
             <h1>Project</h1>
 
+            
 
-            {currentPreviewProject !== "" && (
-                <div className="project-preview-section">
-                    <iframe className="project-preview-iframe" src={currentPreviewProject} frameBorder="0" />
+            {currentPreviewProject !== "" ? (
+                <section>
+                    <div>
+                        <h2>{currentPreviewProject.project_title}</h2> {/* if currentPreviewProject !== "" text change to currentProjectPreview.project_title */}
+                        <p>{currentPreviewProject.project_instructions}</p>
+                    </div>
+                    <div className="project-preview-section">
+                        <iframe className="project-preview-iframe" src={currentPreviewProject.project_link} frameBorder="0" />
+                    </div>
+                </section>
+            ) : 
+                <div>
+                    <h2>Click on a project to preview it here</h2>
                 </div>
-            )}
+            }
+
+            
+            
             <div className='projects-list-div'>
                {projectList.map((project, index) => (
                     <CreateProject key={index} {...project}/>

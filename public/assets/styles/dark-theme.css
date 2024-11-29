@@ -17,11 +17,11 @@ footer {
     background: rgba(69,12,50,1);
 }
 
-.hero-project-button {
+.hero-project-button, .download-button, .preview-button  {
     background-color: #1A1A1D;
 }
 
-.hero-project-button:hover {
+.hero-project-button:hover, .download-button:hover, .preview-button:hover {
     background-color: #3B1C32;
 }
   

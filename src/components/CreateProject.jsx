@@ -1,10 +1,9 @@
-import { Button } from "antd";
 import data from "../data/data.json"
 import PreviewContext from "../Contexts/PreviewContext";
 import { useContext } from "react";
 
 
-const CreateProject = ({ title, img_src, description, languages, preview_link, github }) => {
+const CreateProject = ({ title, img_src, description, languages, preview_link, instructions, github }) => {
     const { currentPreviewProject, getCurrentPreviewProject } = useContext(PreviewContext)
 
     const codingLanguages = data.codingLanguages
@@ -14,9 +13,14 @@ const CreateProject = ({ title, img_src, description, languages, preview_link, g
     return (
         <article className="project-article">
             <h2>{title}</h2>
-            <div className="project-preview-div">
+            <div className="project-display-div">
+                <div className="project-img-div">
+                    <img width='100%' src={img_src} alt="" />
+                    <a className="project-github" href={github} target="_blank">
+                        <img className="project-github-img" src="/assets/contacts/githubLight_logo.png" alt="" />
+                    </a>
+                </div>
                 
-                <img width='100%' src={img_src} alt="" />
                 
             </div>
             <section className="project-info-section">
@@ -25,11 +29,21 @@ const CreateProject = ({ title, img_src, description, languages, preview_link, g
                         <p>{description}</p>
                     </div>
                     <div className="project-spec-div">
+                        <div className="project-buttons">
+                            <button className='preview-button' onClick={() => {
+                                    getCurrentPreviewProject({
+                                        project_title: title,
+                                        project_link: preview_link,
+                                        project_instructions: instructions
+                                        }
+                                    )
+                                
+                                }} disabled={!canPreview}> {canPreview ? 'Preview' : 'Coming Soon'} </button>
+                            
+
+
+                        </div>
                         
-                        <button className='preview-button' onClick={() => {getCurrentPreviewProject(preview_link)}} disabled={!canPreview}> {canPreview ? 'Preview' : 'Coming Soon'} </button>
-                        <a href={github} target="_blank">
-                            <img className="project-github-img" src="/assets/contacts/githubLight_logo.png" alt="" />
-                        </a>
                         <ul className="project-lan-ul">
                             {languages.map((languageCode, index) => (
                                 <li key={index}>
