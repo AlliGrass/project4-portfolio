@@ -52,6 +52,7 @@ As is customary for any and all projects I work on, I draft a layout plan for th
 
 - Scroll to top when switching pages
 - Opening Resume in a new browser tab.
+- Hover over skills will show the name of the skill
 - Loading effects to consider slower connections to the site
 - Proper layout for phone screen sizes
 
