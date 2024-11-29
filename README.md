@@ -53,6 +53,7 @@ As is customary for any and all projects I work on, I draft a layout plan for th
 - Scroll to top when switching pages
 - Opening Resume in a new browser tab.
 - Loading effects to consider slower connections to the site
+- Proper layout for phone screen sizes
 
 
 ### More Animations
