@@ -636,8 +636,8 @@ footer {
   }
 
   .project-article{
-    width: 230px;
-    height: 330px;
+    width: 250px;
+    height: 350px;
     margin-top: 25px;
     padding: 10px;
   }
@@ -645,9 +645,7 @@ footer {
 
 @media (max-width: 500px) {
   .project-article{
-    width: 120px;
-    height: 220px;
     margin-top: 25px;
-    padding: 5px;
+    padding: 0;
   }
 }
