@@ -594,6 +594,7 @@ footer {
   .timeline-language-icon-div {
     height: 42px;
   }
+
   .timeline-language-icon {
     width: 25px;
   }
@@ -603,8 +604,27 @@ footer {
   .nav-buttons-div {
     display: none;
   }
+
+  .method-contact-div img {
+    width: 80px;
+    padding: 30px;
+  }
 }
+/* 
+.method-contact-div img {
+  width: 100px;
+  padding: 50px;
+  padding-top: 10px;
+  padding-bottom: 0;
+} */
 
 @media (max-width: 800px) {
   /* projects */
+}
+
+@media (max-width: 600px) {
+  .method-contact-div img {
+    width: 60px;
+    padding: 20px;
+  }
 }
