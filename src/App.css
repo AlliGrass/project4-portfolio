@@ -616,7 +616,6 @@ footer {
   .project-article{
     width: 350px;
     height: 450px;
-    margin: auto;
     margin-top: 25px;
     padding: 15px;
   }
@@ -637,20 +636,18 @@ footer {
   }
 
   .project-article{
-    width: 250px;
-    height: 350px;
-    margin: auto;
+    width: 230px;
+    height: 330px;
     margin-top: 25px;
-    padding: 15px;
+    padding: 10px;
   }
 }
 
 @media (max-width: 500px) {
   .project-article{
-    width: 150px;
-    height: 250px;
-    margin: auto;
+    width: 120px;
+    height: 220px;
     margin-top: 25px;
-    padding: 15px;
+    padding: 5px;
   }
 }
