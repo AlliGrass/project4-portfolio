@@ -25,7 +25,7 @@ const Projects = () => {
                     <div className="project-preview-section">
                         <div className="project-preview-loading" style={
                             {opacity: isLoading ? "1" : "0"}
-                        }><h2>Loading...</h2></div>
+                        }></div>
                         
                         <iframe className="project-preview-iframe" src={currentPreviewProject.project_link} frameBorder="0" onLoad={() => setIsLoading(false)}/>
                     </div>
