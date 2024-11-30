@@ -7,9 +7,9 @@ const Skills = () => {
 
   const createSkill = (languageCode, index) => (
     <>
-      <li key={index}>
+      <li className="skills-li" key={index}>
         <img src={codingLanguages[languageCode].img_src}/>
-        {/* <span className="langauge-overlay">{codingLanguages[languageCode].name}</span> */}
+        <span className="langauge-overlay">{codingLanguages[languageCode].name}</span>
       </li>
       
     </>

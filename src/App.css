@@ -318,15 +318,36 @@ footer {
 
 .skills-ul li {
   padding: 50px;
+  position: relative;
 }
-
-/* .skills-ul li:hover {
-  background: black;
-} */
 
 .skills-ul li img {
   width: 80px;
 }
+
+.langauge-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  padding: 5px 10px;
+  border-radius: 5px; /* Optional for rounded corners */
+  text-align: center;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.skills-ul li:hover .langauge-overlay {
+  opacity: 1;
+}
+
+.skills-ul li:hover img {
+  opacity: 0.2;
+}
+
+
+
 
 
 /* Projects */
