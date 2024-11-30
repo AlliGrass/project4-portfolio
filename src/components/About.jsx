@@ -40,7 +40,6 @@ const About = () => {
                                 }}
                                 iconStyle= {{ 
                                     background: isDarkMode ? 'rgb(89,36,74) linear-gradient(-30deg, rgba(89,36,74,1) 0%, rgba(69,12,50,1) 43%, rgba(166,77,121,1) 100%)' : 'rgb(128,134,176) linear-gradient(-30deg, rgba(128,134,176,1) 0%, rgba(240,240,255,1) 61%, rgba(166,177,255,1) 100%)',
-                                    border: isDarkMode ? '#f0f0ff' : '#1a1a1d'
                                 }}
                                 position="right"
                                 icon={

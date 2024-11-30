@@ -3,7 +3,7 @@ import PreviewContext from "../Contexts/PreviewContext";
 import { useContext } from "react";
 
 
-const CreateProject = ({ title, img_src, description, languages, preview_link, instructions, github }) => {
+const CreateProject = ({ title, img_src, description, languages, preview_link, instructions, github, setIsLoading }) => {
     const { currentPreviewProject, getCurrentPreviewProject } = useContext(PreviewContext)
 
     const codingLanguages = data.codingLanguages
@@ -31,6 +31,7 @@ const CreateProject = ({ title, img_src, description, languages, preview_link, i
                     <div className="project-spec-div">
                         <div className="project-buttons">
                             <button className='preview-button' onClick={() => {
+                                    setIsLoading(true)
                                     getCurrentPreviewProject({
                                         project_title: title,
                                         project_link: preview_link,
@@ -40,7 +41,8 @@ const CreateProject = ({ title, img_src, description, languages, preview_link, i
                                     window.scrollTo({
                                         top: 0,
                                         behavior: "smooth", 
-                                      });
+                                      })
+                                    
                                 }} disabled={!canPreview}> {canPreview ? 'Preview' : 'Coming Soon'} </button>
                             
 

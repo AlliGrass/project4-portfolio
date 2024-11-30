@@ -49,6 +49,10 @@ footer {
 .nav-left-div label, .nav-right-div label {
     color: #1B1A55;
 }
+
+.vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px #1B1A55, inset 0 2px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05) !important;
+}
   
 .skills-ul li{
     background: rgb(128,134,176);

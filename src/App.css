@@ -300,6 +300,11 @@ footer {
   margin: 0;
 }
 
+/* .vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #1A1A1D, inset 0 2px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05);
+} */
+
+
 
 /* Skills */
 
@@ -454,14 +459,25 @@ footer {
 }
 
 .project-preview-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   width: 100%;
   height: 1000px;
-  /* width: calc(100vw * 80%); */
+}
+
+.project-preview-loading {
+  position: absolute;
+  font-size: 65px;
+  opacity: 0;
+  z-index: 1;
 }
 
 .project-preview-iframe {
   width: 1600px;
   height: 900px;
+  z-index: 10;
 }
 
 
