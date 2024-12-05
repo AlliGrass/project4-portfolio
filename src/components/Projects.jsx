@@ -17,7 +17,7 @@ const Projects = () => {
             <h1>Project</h1>
 
             {currentPreviewProject !== "" ? (
-                <section>
+                <section className="project-preview-container-section">
                     <div>
                         <h2>{currentPreviewProject.project_title}</h2>
                         <p>{currentPreviewProject.project_instructions}</p>
@@ -25,16 +25,20 @@ const Projects = () => {
                     <div className="project-preview-section">
                         <div className="project-preview-loading" style={
                             {opacity: isLoading ? "1" : "0"}
-                        }></div>
+                        }> </div>
                         
                         <iframe className="project-preview-iframe" src={currentPreviewProject.project_link} frameBorder="0" onLoad={() => setIsLoading(false)}/>
                     </div>
                 </section>
             ) : 
-                <div>
+                <div className="preview-guide">
                     <h2>Click on a project to preview it here</h2>
                 </div>
             }
+
+            <div className="preview-guide-small">
+                <h2>Screen is too small to preview project</h2>
+            </div>
 
             
             

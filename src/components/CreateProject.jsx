@@ -43,7 +43,7 @@ const CreateProject = ({ title, img_src, description, languages, preview_link, i
                                         behavior: "smooth", 
                                       })
                                     
-                                }} disabled={!canPreview}> {canPreview ? 'Preview' : 'Coming Soon'} </button>
+                                }} disabled={!canPreview}> {canPreview ? 'Preview' : 'N/A'} </button>
                             
 
 

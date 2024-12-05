@@ -11,6 +11,10 @@ img {
   display: block;
 }
 
+h4 {
+  font-weight: unset;
+}
+
 a {
   color: unset;
 }
@@ -172,7 +176,7 @@ button:hover {
 }
 
 .nav-left-arrow-div, .nav-right-arrow-div {
-  font-size: xxx-large;
+  font-size: xxx-large !important;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -201,7 +205,7 @@ footer {
   display: flex;
   justify-content: center;
   height: 100vh;
-  /* width: 100vh; */
+  /* width: 100vw; */
   z-index: 100;
 }
 
@@ -394,6 +398,7 @@ footer {
 
 
 .project-info-section {
+  width: 100%;
   padding: 20px;
   padding-top: 0;
   display: flex;
@@ -466,6 +471,14 @@ footer {
   height: 1000px;
 }
 
+.preview-guide {
+  display: block;
+}
+
+.preview-guide-small {
+  display: none;
+}
+
 .project-preview-loading {
   position: absolute;
   font-size: 65px;
@@ -528,6 +541,7 @@ footer {
 }
 
 @media (max-width: 1700px) {
+
   .skills-ul li {
     padding: 40px;
   }
@@ -538,6 +552,14 @@ footer {
 }
 
 @media (max-width: 1600px) {
+  h1 {
+    font-size: 50px !important;
+  }
+
+  h2 {
+    font-size: 18px !important;
+  }
+
   .projects-list-div {
     grid-template-columns: 1fr;
   }
@@ -553,19 +575,38 @@ footer {
 }
 
 @media (max-width: 1300px) {
+  h2 {
+    font-size: 24px !important;
+  }
+
   .hero-section {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
   }
 
+  .hero-div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
   .hero-img {
     display: none;
   }
 
-  .project-preview-section {
-    display: none;
+  .project-preview-container-section {
+    display: none !important;
   }
+
+  .preview-guide {
+    display: none !important;
+  }
+
+  .preview-guide-small {
+    display: block !important;
+  }
+
+
 
   .about-section {
     grid-template-columns: 1fr;
@@ -588,6 +629,16 @@ footer {
 }
 
 @media (max-width: 1170px) {
+
+  h2 {
+    font-size: 22px !important;
+  }
+
+  p {
+    font-size: 20px !important;
+  }
+
+
   .timeline-language-icon-div {
     height: 42px;
   }
@@ -601,7 +652,17 @@ footer {
   }
 }
 
+@media  (max-width: 1000px) {
+  h2 {
+    font-size: 20px !important;
+  }
+}
+
 @media (max-width: 900px) {
+  p {
+    font-size: 18px !important;
+  }
+
   .nav-buttons-div {
     display: none;
   }
@@ -626,6 +687,29 @@ footer {
 }
 
 @media (max-width: 600px) {
+  h1 {
+    font-size: 35px !important;
+  }
+  h2 {
+    font-size: 15px !important;
+  }
+
+  p {
+    font-size: 12px !important;
+  }
+
+  button {
+    font-size: 10px !important;
+  }
+
+  .skills-ul li {
+    padding: 20px;
+  }
+  
+  .skills-ul li img {
+    width: 25px;
+  }
+
   .method-contact-div img {
     width: 60px;
     padding: 20px;
@@ -641,6 +725,23 @@ footer {
     margin-top: 25px;
     padding: 10px;
   }
+
+  .project-github-img {
+    width: 35px;
+  }
+
+  .project-lan-ul {
+    padding-left: 0;
+  }
+  
+  .project-lan-ul li {
+    margin: 3px;
+  }
+  
+  .project-lan-ul li img {
+    width: 10px;
+  }
+  
 }
 
 @media (max-width: 500px) {

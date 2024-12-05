@@ -12,7 +12,7 @@ const NavButtons = () => {
                 <Link to={leftNavButton}>
                     <div className="nav-left-div">
                         <div className="nav-left-arrow-div">
-                            <p>&lsaquo;</p>
+                            <h4>&lsaquo;</h4>
                         </div>
                         
                         <label>{pagePaths[leftNavButton].pageName}</label>
@@ -23,7 +23,7 @@ const NavButtons = () => {
                 <Link to={rightNavButton} target={pagePaths.pageName === "Resume" ? "_blank" : "_self"}>
                     <div className="nav-right-div">
                         <div className='nav-right-arrow-div'>
-                            <p>&rsaquo;</p>
+                            <h4>&rsaquo;</h4>
                         </div>
                         
                         <label>{pagePaths[rightNavButton].pageName}</label>
