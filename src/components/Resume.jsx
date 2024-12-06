@@ -24,7 +24,7 @@ const Resume = () => {
                         visible: isPreviewVisible,
                         onVisibleChange: (visible, prevVisible) => 
                             setPreviewVisible(visible)
-                    }} src={resume.img} alt="" />
+                    }} src={resume.pdf} alt="" />
             </div>
             
 
