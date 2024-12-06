@@ -10,7 +10,7 @@ const Resume = () => {
     const [isPreviewVisible, setPreviewVisible] = useState(false);
 
     const downloadResume = () => {
-        saveAs(resume.pdf, 'Grasso_Allison_Resume.pdf')
+        saveAs(resume.pdf, 'AllisonGrassoResume.pdf')
     }
 
     return (
