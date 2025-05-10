@@ -3,15 +3,8 @@
 Thank you for visiting my portfolio website where I showcase the best of my software engineering abilities.
 
 ## Tools Used
-
-### React
-### Vite
-### JavaScript
-### CSS
-### ANTD - Ant Design UI Framework
-### Verticle Timeline - Component
-
-
+### Languages: JavaScript, CSS
+### Frameworks: React, ANTD
 
 
 #
