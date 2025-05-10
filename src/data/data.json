@@ -148,10 +148,6 @@
     "im": {
         "name": "Immer",
         "img_src": "/assets/languages/immer_logo.png"
-    },
-    "zu": {
-        "name": "Zustand",
-        "img_src": "/assets/languages/zustand_logo.svg"
     }
 }
 }
