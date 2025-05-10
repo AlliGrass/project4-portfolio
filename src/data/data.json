@@ -88,8 +88,8 @@
    ],
 
    "proficientSkills": {
-    "technical": ["html", "css", "js", "cpp", "java"],
-    "environment": ["node", "rct", "eide", "psql"]
+    "technical": ["html", "css", "js", "ts", "java"],
+    "environment": ["node", "rct", "psql"]
   },
 
    "codingLanguages": {
@@ -144,6 +144,14 @@
     "eide": {
         "name": "Eclipse IDE",
         "img_src": "/assets/languages/eclipseIDE_logo.png"
+    },
+    "im": {
+        "name": "Immer",
+        "img_src": "/assets/languages/immer_logo.png"
+    },
+    "zu": {
+        "name": "Zustand",
+        "img_src": "/assets/languages/zustand_logo.svg"
     }
 }
 }
