@@ -27,13 +27,13 @@
 
     "projectList": [
         {
-            "title": "Solitaire",
-            "img_src": "/assets/projects/solitaire.png",
-            "description": "The classic card game using no libraries or APIs. Complete DOM implementation with draggable cards.",
-            "languages": ["html", "css", "js"],
-            "preview_link": "https://alligrass.github.io/project1_Solitaire/",
-            "instructions": "Click and drag the respective cards to play",
-            "github": "https://github.com/AlliGrass/project1_Solitaire"
+            "title": "Dice RPG Webgame",
+            "img_src": "/assets/projects/dicerpg.png",
+            "description": "A webapp game that relies on dice rolls to progress through the game.",
+            "languages": ["tsc", "rct", "im", "zu"],
+            "preview_link": "",
+            "instructions": "",
+            "github": "https://github.com/AlliGrass/typescript-dice-rpg"
         },
         {
             "title": "Terminal - Rock Paper Scissors",
