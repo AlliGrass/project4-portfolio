@@ -30,7 +30,7 @@
             "title": "Dice RPG Webgame",
             "img_src": "/assets/projects/dicerpg.png",
             "description": "A webapp game that relies on dice rolls to progress through the game.",
-            "languages": ["tsc", "rct"],
+            "languages": ["tsc", "rct", "im", "zu"],
             "preview_link": "",
             "instructions": "",
             "github": "https://github.com/AlliGrass/typescript-dice-rpg"
@@ -88,7 +88,7 @@
    ],
 
    "proficientSkills": {
-    "technical": ["html", "css", "js", "ts", "java"],
+    "technical": ["html", "css", "js", "tsc", "java"],
     "environment": ["node", "rct", "psql"]
   },
 
@@ -144,6 +144,14 @@
     "eide": {
         "name": "Eclipse IDE",
         "img_src": "/assets/languages/eclipseIDE_logo.png"
+    },
+       "im": {
+        "name": "Immer",
+        "img_src": "/assets/languages/immer_logo.png"
+    },
+    "zu": {
+        "name": "Zustand",
+        "img_src": "/assets/languages/zustand_logo.svg"
     }
 }
 }
