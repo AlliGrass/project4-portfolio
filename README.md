@@ -1,4 +1,4 @@
-# Welcome to my [Portfolio Website](alligrass.dev)
+# Welcome to my [Portfolio Website](https://alligrass.dev/)
 
 Thank you for visiting my portfolio website where I showcase the best of my software engineering abilities.
 
